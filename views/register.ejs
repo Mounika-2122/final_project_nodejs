@@ -1,0 +1,27 @@
+<h1>Passport Register </h1>
+<style>
+    .form{
+        display: inline;
+        height:50px;
+        width:100px;
+        padding: 10px;
+        margin: 10px;
+        background-color:pink;
+    }
+  </style>
+<form action="/register" method="POST">
+  <div class=form>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required />
+  </div>
+  <div class=form>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+  </div>
+  <div class=form>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required />
+  </div>
+  <button type="submit">Register</button>
+</form>
+<a href="/login">Login</a>
